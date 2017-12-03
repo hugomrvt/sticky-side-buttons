@@ -354,7 +354,7 @@ class ssb_ui {
 						?>
 						<li id="ssb-btn-<?php echo $btn_id; ?>">
 							<p>
-								<a href="<?php echo $this->buttons['btns'][ $btn_id ]['btn_link']; ?>"><?php
+								<a href="<?php echo $this->buttons['btns'][ $btn_id ]['btn_link']; ?> "target="_blank"><?php
 									echo ( isset( $this->buttons['btns'][ $btn_id ]['btn_icon'] ) && $this->buttons['btns'][ $btn_id ]['btn_icon'] ) ? '<i class="fa ' . $this->buttons['btns'][ $btn_id ]['btn_icon'] . '"></i> ' : '';
 									echo ( isset( $this->buttons['btns'][ $btn_id ]['btn_text'] ) && ( isset( $this->settings['btn_anim'] ) && $this->settings['btn_anim'] != 'icons' ) ) ? $this->buttons['btns'][ $btn_id ]['btn_text'] : ' &nbsp; ';
 									?></a>
